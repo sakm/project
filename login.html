@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login form</title>
+	<style type="text/css">
+		
+	body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #34495e;
+
+}
+.box
+{
+	width: 300px;
+	padding:40px;
+	position: absolute;
+	top:55%;
+	left:50px;
+	transform: translate(10%,-50%);
+	background: #191919;
+	text-align: center;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin : 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	width: 200px;
+
+	outline: none; 
+	color : white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type ="password"]:focus{
+	width: 280px;
+	border-color : #2ecc71;
+}
+
+.box input[type = "submit"]{
+
+	border: 0;
+	background : none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+
+}
+
+.box input[type = "submit"]:hover{
+	background: #2ecc71;
+}
+
+
+
+.box1
+{
+	width: 300px;
+	padding:40px;
+	position: absolute;
+	top:55%;
+	left:50px;
+	transform: translate(135%,-50%);
+	background: #191919;
+	text-align: center;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.box1 h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.box1 input[type = "text"],.box1 input[type = "password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin : 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none; 
+	color : white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+.box1 input[type = "text"]:focus,.box1 input[type ="password"]:focus{
+	width: 280px;
+	border-color : #2ecc71;
+}
+
+.box1 input[type = "submit"]{
+
+	border: 0;
+	background : none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+
+}
+
+.box1 input[type = "submit"]:hover{
+	background: #2ecc71;
+}
+
+
+.box2
+{
+	width: 300px;
+	padding:40px;
+	position: absolute;
+	top:55%;
+	left:50px;
+	transform: translate(260%,-50%);
+	background: #191919;
+	text-align: center;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.box2 h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.box2 input[type = "text"],.box2 input[type = "password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin : 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none; 
+	color : white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+.box2 input[type = "text"]:focus,.box2 input[type ="password"]:focus{
+	width: 280px;
+	border-color : #2ecc71;
+}
+
+.box2 input[type = "submit"]{
+
+	border: 0;
+	background : none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+
+}
+
+.box2 input[type = "submit"]:hover{
+	background: #2ecc71;
+}
+
+header{
+	background :#191919;
+	margin:0; 
+	padding: 0;
+	font-family: sans-serif;
+	height: 10vh;
+	background-size: cover;
+	background-position: center;
+}
+ul{
+	float: right;
+	list-style-type: none;
+
+
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li a {
+	
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+
+
+
+	</style>
+	
+</head>
+
+
+<body>
+	<header>
+		<div class="main">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+<form class="box" action="login.html" method="post">
+	<h1> Admin Login</h1>
+	<input type="text" name="" placeholder="Username">
+	<input type="password" name="" placeholder="Password">
+	<input type="submit" name="" value="Login">
+</form>
+
+<form class="box1" action="login.html" method="post">
+	<h1> Trainer Login</h1>
+	<input type="text" name="" placeholder="Username">
+	<input type="password" name="" placeholder="Password">
+	<input type="submit" name="" value="Login">
+</form>
+
+<form class="box2" action="login.html" method="post">
+	<h1> SME Login</h1>
+	<input type="text" name="" placeholder="Username">
+	<input type="password" name="" placeholder="Password">
+	<input type="submit" name="" value="Login">
+</form>
+	
+
+
+</body>
+</html>
