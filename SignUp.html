@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="validation.js"></script>
+    
 <title>Sign Up</title>
 <style>
 	body{
@@ -145,7 +147,7 @@ header h1{
 		<label style="padding-left: 10px">Confirm Password<sup><span class="star">&#x2605;</span></sup></label>
 		<input type="Password" name="ConfirmPassWord" placeholder="ReType PassWord" required style="margin-left: 25px" id="ConfirmPassword"><br>
 		
-		<input type="submit" name="Action" value="Register">
+		<input type="submit" name="Action" value="Register" onclick="validation()">
 		
 		 
 	</form>
@@ -155,3 +157,4 @@ header h1{
 	</div>
 </body>
 </html>
+
