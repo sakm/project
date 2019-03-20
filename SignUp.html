@@ -39,9 +39,7 @@ header h1{
 	width: 100%;
 	
 }
-
 .box{
-
 	width: 500px;
 	padding: 40px;
 	position: relative;
@@ -53,8 +51,9 @@ header h1{
 	color: white;
 	margin-top: 25px;
 	margin-bottom: 30px;
+	margin-left:-40px;
 }
-.box input[type = "text"],.box input[type ="password"]{
+.box input[type = "text"],.box input[type ="password"],.box input[type="email"]{
 	border: 0;
 	background: none;
 	display: inline-block;
@@ -68,10 +67,7 @@ header h1{
 	border-radius: 24px;
 	transition: 0.25s;
 }
-
-
 .box input[type = "submit"]{
-
 	border: 0;
 	background : none;
 	display: block;
@@ -84,9 +80,7 @@ header h1{
 	border-radius: 24px;
 	transition: 0.25s;
 	cursor: pointer;
-
 }
-
 .box input[type = "submit"]:hover{
 	background: #2ecc71;
 }
@@ -103,13 +97,15 @@ header h1{
    font-family: sans-serif;
    
 }   
-.box input[type = "text"]:focus,.box input[type ="password"]:focus,.box input[type="text"]:hover,.box input[type = "password"]:hover{
+.box input[type = "text"]:focus,.box input[type ="password"]:focus,.box input[type="text"]:hover,.box input[type = "password"]:hover,.box input[type="email"]:hover{
 	width: 220px;
 	border-color : #2ecc71;
 }
-
    
 </style>
+<script src="../javaScriptValidation/validation.js">
+
+</script>
 </head>
 <body>
 
@@ -118,32 +114,36 @@ header h1{
 			<h1 align="center">eTrainer Pool Management</h1>
 		</div>
 	</header>
-	<form  class="box">
+	<form  class="box" id="box">
 		<h1> Sign Up</h1>
 		
 		<label style="padding-left: 20px">First Name<sup><span class="star">&#x2605;</span></sup></label>
-		<input type="text" name="FirstName" placeholder="Firstname" required="required" style="margin-left: 50px"><br>
+		<input type="text" name="FirstName" placeholder="Firstname" required style="margin-left: 50px" id="FirstName"><br>
 
 		<label style="padding-left: 20px">Last Name<sup><span class="star">&#x2605;</span></sup></label>
-		<input type="text" name="LastName" placeholder="Lastname"  required="required" style="margin-left: 50px"><br>
+		<input type="text" name="LastName" placeholder="Lastname"  required style="margin-left: 50px" id="LastName"><br>
 
 		<label style="padding-left: 30px">Age<sup><span class="star">&#x2605;</span></sup></label>
-		<input type="text" name="Age" placeholder="Age" required="required" style="margin-left: 82px"><br>
+		<input type="text" name="Age" placeholder="Age" required style="margin-left: 82px" id="Age"><br>
 
 		<label style="padding-right:  8em">Gender<sup><span class="star">&#x2605;</span></sup></label>
-		<input type="radio" name="gender"  value="Male" style="margin-left: 0px">Male &nbsp&nbsp <input type ="radio" name="gender" value="Female" style="margin-left: 0px">Female <br><br>
+		<input type="radio" name="gender"  required value="Male" style="margin-left: 0px">Male &nbsp &nbsp <input type ="radio" required name="gender" value="Female" style="margin-left: 0px">Female <br><br>
 
 		<label style="padding-left: 30px">Contact No<sup><span class="star">&#x2605;</span></sup></label>
-		<input type="text" name="Contact" placeholder="Contact" required="required" style="margin-left: 42px"><br>
+		<input type="text" name="Contact" placeholder="Contact" required style="margin-left: 42px" id="Contact"><br>
 
-		<label style="padding-left: 30px">UserID<sup><span class="star">&#x2605;</span></sub></label>
-		<input type="text" name="UserId" placeholder="UserID" required="required" style="margin-left: 75px"><br>
+		<label style="padding-left: 30px">UserID<sup><span class="star">&#x2605;</span></sup></label>
+		<input type="text" name="UserId" placeholder="UserID" required style="margin-left: 75px" id="UserId"><br>
+		
+		<label style="padding-left: 30px">Email ID<sup><span class="star">&#x2605;</span></sup></label>
+		<input type="email" name="EmailID" placeholder="Email" required style="margin-left: 75px" id="EmailID"><br>
+		
 
 		<label style="padding-left: 20px">Password<sup><span class="star">&#x2605;</span></sup></label>
-		<input type="Password" name="Password" placeholder="Password" required="required" style="margin-left: 65px"><br>
+		<input type="Password" name="Password" placeholder="Password" required style="margin-left: 65px" id="Password"><br>
 
 		<label style="padding-left: 10px">Confirm Password<sup><span class="star">&#x2605;</span></sup></label>
-		<input type="password" name="Confirm PassWord" placeholder="ReType PassWord" required="required" style="margin-left: 25px"><br>
+		<input type="Password" name="ConfirmPassWord" placeholder="ReType PassWord" required style="margin-left: 25px" id="ConfirmPassword"><br>
 		
 		<input type="submit" name="Action" value="Register">
 		
