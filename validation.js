@@ -1,34 +1,39 @@
 
-$(document).ready(function() {
 
-  $('#box').submit(function(e) {
-    e.preventDefault();
-    var FirstName = $('#FirstName').val();
-    var LastName = $('#LastName').val();
-    var Age = parseInt($('#Age').val());
-    var Gender = $('#Gender').val();
-    var Contact = parseInt($('#Contact'));
-    var UserID = parseInt($('#UserID'));
-    var EmailID = $('#EmailID').val();
-    var password = $('#Password').val();
-    var ConfirmPassWord =$('#ConfirmPassWord').val();
-
+function validation(){
+    
+    var firstname = document.getElementById("FirstName").value;
+    var lastname = document.getElementById("LastName").value;
+    var age = document.getElementById("Age").value;
+      
+    var contact = document.getElementById("Contact").value;
+    var userid = document.getElementById("UserId").value;
+    var emailid = document.getElementById("EmailID").value;
+    var password = document.getElementById("Password").value;
+    var confirmpassword = document.getElementById("ConfirmPassword").value;
+      
+      
    
     if (isNaN(age)) {
       alert("Age must be number. Please Input Correctly");
     }
    
     
-    if (isNaN(Contact)) {
+    if (isNaN(contact)) {
         alert("Contact must be number. Please Input Correctly");
       }
     
-    if (isNaN(UserID)) {
+    if (isNaN(userid)) {
         alert("UserID must be number. Please Input Correctly");
       }
     
-    if (Password.length < 8) {
-        alert("Invalid  password");
+   
+    if(password != confirmpassword){
+        alert("Password doesn't match");
+    }
+    
+     if (password.length < 8) {
+        alert("Password must be of minimum 8 characters");
        }
     if (email.length < 1) {
       alert("Invalid Email");
@@ -41,8 +46,11 @@ $(document).ready(function() {
       }
     }
     
-  });
-  });
+    
+  
+}
+
+  
 
   
 
