@@ -1,5 +1,7 @@
 
 
+
+
 function validation(){
     
     var firstname = document.getElementById("FirstName").value;
@@ -7,13 +9,40 @@ function validation(){
     var age = document.getElementById("Age").value;
       
     var contact = document.getElementById("Contact").value;
-    var userid = document.getElementById("UserId").value;
+    var userid = document.getElementById("UserID").value;
     var emailid = document.getElementById("EmailID").value;
     var password = document.getElementById("Password").value;
     var confirmpassword = document.getElementById("ConfirmPassword").value;
       
       
-   
+   if(password.length == 0){
+    document.getElementById("Password").style.borderColor = "red";
+   }
+
+   if(firstname.length == 0)
+   {
+    document.getElementById("FirstName").style.borderColor = "red";
+   }
+
+   if(lastname.length == 0){
+    document.getElementById("LastName").style.borderColor = "red";
+   }
+   if(age.length == 0){
+    document.getElementById("Age").style.borderColor = "red";
+   }
+   if(contact.length == 0){
+    document.getElementById("Contact").style.borderColor = "red";
+   }
+   if(userid.length == 0){
+    document.getElementById("UserID").style.borderColor = "red";
+   }
+
+   if(emailid.length == 0){
+    document.getElementById("EmailID").style.borderColor = "red";
+   }
+
+
+
     if (isNaN(age)) {
       alert("Age must be number. Please Input Correctly");
     }
@@ -55,3 +84,4 @@ function validation(){
   
 
   
+
